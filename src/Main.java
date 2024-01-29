@@ -13,7 +13,7 @@ public class Main {
             } else if (command == 2) {
                 stepTracker.changeStepGoal();
             } else if (command == 3) {
-                //TODO: Напечатать статистику за определённый месяц
+                stepTracker.printStatistic();
             } else if (command == 0) {
                 break;
             } else {
