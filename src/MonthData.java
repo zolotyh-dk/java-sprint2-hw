@@ -1,3 +1,3 @@
 public class MonthData {
-    private int[] days = new int[30];
+    public int[] days = new int[30];
 }

@@ -3,12 +3,13 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        StepTracker stepTracker = new StepTracker(scanner);
 
         while (true) {
             printMenu();
             int command = Integer.parseInt(scanner.nextLine());
             if (command == 1) {
-                //TODO: Ввод количества шагов за определенный день
+                stepTracker.addNewNumberStepsPerDay();
             } else if (command == 2) {
                 //TODO: Изменить цель по количеству шагов в день
             } else if (command == 3) {
