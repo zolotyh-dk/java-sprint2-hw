@@ -11,7 +11,7 @@ public class Main {
             if (command == 1) {
                 stepTracker.addNewNumberStepsPerDay();
             } else if (command == 2) {
-                //TODO: Изменить цель по количеству шагов в день
+                stepTracker.changeStepGoal();
             } else if (command == 3) {
                 //TODO: Напечатать статистику за определённый месяц
             } else if (command == 0) {
