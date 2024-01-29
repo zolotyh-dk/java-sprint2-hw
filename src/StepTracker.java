@@ -11,9 +11,17 @@ public class StepTracker {
         for (int i = 0; i < monthToData.length; i++) {
             monthToData[i] = new MonthData();
         }
+
+//        Заполнение monthToData тестовыми данными
+//        Random random = new Random();
+//        for (int i = 0; i < 12; i++) {
+//            for (int j = 0; j < 30; j++) {
+//                monthToData[i].days[j] = random.nextInt(20000);
+//            }
+//        }
     }
 
-    public void addNewNumberStepsPerDay() {
+    void addNewNumberStepsPerDay() {
         System.out.println("Введите номер месяца");
         int month = Integer.parseInt(scanner.nextLine());
         if (month < 1 || month > 12) {
@@ -36,7 +44,7 @@ public class StepTracker {
         monthData.days[day - 1] = steps;
     }
 
-    public void changeStepGoal() {
+    void changeStepGoal() {
         System.out.println("Введите цель по количеству шагов за день.");
         int newGoal = Integer.parseInt(scanner.nextLine());
         if (newGoal <= 0) {
@@ -46,8 +54,8 @@ public class StepTracker {
         goalByStepsPerDay = newGoal;
     }
 
-    public void printStatistic() {
-        System.out.println("За какой месяц вы хотите увидеть статистику?");
+    void printStatistic() {
+        System.out.println("Введите номер месяца.");
         int month = Integer.parseInt(scanner.nextLine());
         if (month < 1 || month > 12) {
             System.out.println("Такого месяца не существует.");
